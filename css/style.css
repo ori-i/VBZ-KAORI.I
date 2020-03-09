@@ -27,22 +27,21 @@ header{
     height: 80px;
     position: fixed;
     top: 0;
-    padding-left: 5%;
     background-color:white;
     color: #47433b;
     z-index: 3;
 }
 .headerdiv h1{
-    margin: 1rem;
     margin-top: 2rem;
+    padding-left: 7rem;
     float: left;
 }
 ul{
-    position: relative;
-    margin-top: 2.5rem;
-    right: 15%;
+    position: static;
+    margin-left: 2rem;
+    margin-top: 3rem;
     list-style: none;
-    float: right;
+    float: left;
     
 }
 li{
@@ -77,35 +76,35 @@ main h1{
     margin-bottom: 5rem;
     padding: 1rem;
     width: 360px;
-    height: 200px;
+    height: 270px;
     filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
 }
 .news-b{
     background-color: #ffffff;
     margin: 3rem;
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     padding: 1rem;
     width: 360px;
-    height: 200px;
+    height: 270px;
     filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
 }
 .news-c{
     background-color: #ffffff;
     margin: 3rem;
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     padding: 1rem;
     width: 360px;
-    height: 200px;
+    height: 270px;
     filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
 }
 .news-d{
     background-color: #ffffff;
     margin: 3rem;
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     margin-right: 7rem;
     padding: 1rem;
     width: 360px;
-    height: 200px;
+    height: 270px;
     filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
 }
 .newsmore{
@@ -113,7 +112,7 @@ main h1{
     margin-left: 7rem;
     margin-bottom: 5rem;
     text-align: center;
-    background-color: #e2dac8;
+    background-color: #a09782;
     width: 150px;
     height: 25px;
     filter: drop-shadow(2px 2px 2px rgb(185, 176, 159));
@@ -154,21 +153,53 @@ footer{
 
 /*別デバイスの為の記述*/
 @media only screen and (min-width:640px) and (max-width:1023px) {
-    main{
-        display: initial;
-    }
-    main article{
-        margin: auto;
-    }
-    aside h2{
+    #news{
         display: block;
     }
-    main aside{
-        width: 700px;
-        margin: auto;
+    .news-a{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 70%;
+        height: 44rem;
     }
-    .member{
-        display: inline-block;
+    .news-b{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 70%;
+        height: 44rem;
+    }
+    .news-c{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 70%;
+        height: 44rem;
+    }
+    .news-d{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 70%;
+        height: 44rem;
+    }
+    .newsmore{
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        background-color: #a09782;
+        width: 150px;
+        height: 25px;
+        filter: drop-shadow(2px 2px 2px rgb(185, 176, 159));
+    }
+    .about{
+        width: 100%;
+    }
+    .link{
+        clear: both;
+        margin: 0;
     }
 }
 
@@ -176,53 +207,103 @@ footer{
     html{
         font-size: 100%;
     }
-    .news{
+    header{
+        position: relative;
+        top: 0;
         width: 100%;
+        height: 6rem;
     }
-    .news h3{
-        width: 100%;
-        font-size: 1.4rem;
-        white-space: initial;
+    .headerdiv h1{
+        margin: 0;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        font-size: 130%;
+        background-color: #ffffff;
     }
-    .news ul{
-        width: 100%;
+    ul{
+        clear: both;
+        margin: 0;
+        padding-top: 0;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        list-style: none;
+        background-color: #ffffff;
     }
-    .news li{
-        width: 50%;
+    li{
+        font-size: 1.3rem;
         padding: 0;
+        padding-right: 2rem;
+        display: inline;
     }
-    .news-site{
-        width: 100%;
-    }
-    main{
-        width: 100%;
-        display: initial;
-    }
-    main article{
-        width: 100%;
-        margin: auto;
+    main h1{
+        padding: 1rem;
+        font-size: 120%;
     }
     main h3{
+        font-size: 80%;
+    }
+    #news{
+        display: block;
+        font-size: 1rem;
+    }
+    .news-a{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 80%;
+        height: 23rem;
+    }
+    .news-b{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 80%;
+        height: 23rem;
+    }
+    .news-c{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 80%;
+        height: 23rem;
+    }
+    .news-d{
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 80%;
+        height: 23rem;
+    }
+    .newsmore{
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        background-color: #a09782;
+        width: 150px;
+        height: 25px;
+        filter: drop-shadow(2px 2px 2px rgb(185, 176, 159));
+    }
+    .about,.link{
+        font-size: 1rem;
+    }
+    .about{
         text-align: left;
     }
-    main section{
-        margin: 10px 5px;
+    .about p{
+        padding: 1rem;
+        padding-left: 1rem;
+        }
+    .link{
+        clear: both;
+        margin: 0;
     }
-    .icon{
-        float: initial;
-        width: 50%;
-        padding: 0 25%;
+    .link p{
+    padding: 1rem;
+    padding-left: 1rem;
     }
-    main aside{
-        width: 100%;
+    .link img{
+        width: 200px;
+        height: 40px;
     }
-    aside h2{
-        display: block;
-    }
-    main aside{
-        width: 100%;
-        margin: auto;
-    }
-    .member{
-        display: inline-block;
-    }
+}
