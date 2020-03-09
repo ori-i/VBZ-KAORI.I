@@ -1,0 +1,228 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.4rem;
+    color: #000c15;
+    background-color: #f1e9df;
+    font-family: メイリオ, Meiryo, Osaka, “ヒラギノ角ゴ Pro W3”, “Hiragino Kaku Gothic Pro”, “ＭＳ Ｐゴシック”, “MS PGothic”, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #47433b;
+}
+a:hover{
+    
+    color: #c5b9a3;
+}
+
+/*ヘッダー*/
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    padding-left: 5%;
+    background-color:white;
+    color: #47433b;
+    z-index: 3;
+}
+.headerdiv h1{
+    margin: 1rem;
+    margin-top: 2rem;
+    float: left;
+}
+ul{
+    position: relative;
+    margin-top: 2.5rem;
+    right: 15%;
+    list-style: none;
+    float: right;
+    
+}
+li{
+    display: inline;
+    padding: 1rem;
+}
+/*ヘッダーここまで*/
+
+/*メイン*/
+.maintop{
+    font-size: 0;
+}
+main img{
+    width: 100%;
+}
+main h1{
+    padding: 2rem;
+    padding-left: 7rem;
+    background-color: #7e7667;
+    color: #ffffff;
+}
+#news{
+    display: flex;
+}
+#news img{
+    border: 1px #b8b2a7 solid;
+}
+.news-a{
+    background-color: #ffffff;
+    margin: 3rem;
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    width: 360px;
+    height: 200px;
+    filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
+}
+.news-b{
+    background-color: #ffffff;
+    margin: 3rem;
+    margin-left: 0.2rem;
+    padding: 1rem;
+    width: 360px;
+    height: 200px;
+    filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
+}
+.news-c{
+    background-color: #ffffff;
+    margin: 3rem;
+    margin-left: 0.2rem;
+    padding: 1rem;
+    width: 360px;
+    height: 200px;
+    filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
+}
+.news-d{
+    background-color: #ffffff;
+    margin: 3rem;
+    margin-left: 0.2rem;
+    margin-right: 7rem;
+    padding: 1rem;
+    width: 360px;
+    height: 200px;
+    filter: drop-shadow(5px 5px 5px rgb(185, 176, 159));
+}
+.newsmore{
+    margin: 0;
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    background-color: #e2dac8;
+    width: 150px;
+    height: 25px;
+    filter: drop-shadow(2px 2px 2px rgb(185, 176, 159));
+    clear: both;
+}
+.about{
+    text-align: left;
+    float: left;
+}
+.about p{
+    padding: 5rem;
+    padding-left: 7rem;
+    }
+.link{
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+}
+.link p{
+    padding: 5rem;
+    padding-left: 7rem;
+}
+.link img{
+    width: 200px;
+    height: 40px;
+}
+/*メインここまで*/
+footer{
+    clear: both;
+    height: 30px;
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+    padding-left: 5%;
+    background-color:#47433b;
+    color: #ffffff;
+    z-index: 3;
+}
+
+/*別デバイスの為の記述*/
+@media only screen and (min-width:640px) and (max-width:1023px) {
+    main{
+        display: initial;
+    }
+    main article{
+        margin: auto;
+    }
+    aside h2{
+        display: block;
+    }
+    main aside{
+        width: 700px;
+        margin: auto;
+    }
+    .member{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:639px) {
+    html{
+        font-size: 100%;
+    }
+    .news{
+        width: 100%;
+    }
+    .news h3{
+        width: 100%;
+        font-size: 1.4rem;
+        white-space: initial;
+    }
+    .news ul{
+        width: 100%;
+    }
+    .news li{
+        width: 50%;
+        padding: 0;
+    }
+    .news-site{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        display: initial;
+    }
+    main article{
+        width: 100%;
+        margin: auto;
+    }
+    main h3{
+        text-align: left;
+    }
+    main section{
+        margin: 10px 5px;
+    }
+    .icon{
+        float: initial;
+        width: 50%;
+        padding: 0 25%;
+    }
+    main aside{
+        width: 100%;
+    }
+    aside h2{
+        display: block;
+    }
+    main aside{
+        width: 100%;
+        margin: auto;
+    }
+    .member{
+        display: inline-block;
+    }
